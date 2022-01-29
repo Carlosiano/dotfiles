@@ -1,0 +1,17 @@
+completions=(
+  git
+  composer
+  ssh
+)
+
+aliases=(
+  general
+)
+
+plugins=(
+  git
+  bashmarks
+)
+
+source "$OSH"/oh-my-bash.sh
+

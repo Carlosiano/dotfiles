@@ -1,0 +1,41 @@
+# default
+alias ll="ls -la"
+alias cl="clear"
+
+
+## shell profile
+alias eshell="nvim ~/.config/shell"
+
+## i3wm 
+alias ewm='nvim ~/.config/i3'
+
+## terminal - alacritty 
+alias eterm="nvim ~/.config/alacritty"
+
+# source config
+## aliases
+alias ralias="source ~/.config/aliases/.aliases"
+
+## shell proffile
+alias rbash='source ~/.bashrc'
+alias rzsh='source ~/.zshrc'
+alias rfish="source ~/.config/fish/config.fish"
+
+
+## open neovim terminal, neovim error or vscode
+alias nterm='rm ~/.config/nvim && rm ~/.local/share/nvim && ln -s ~/neovim/terminal/config ~/.config/nvim && ln -s ~/neovim/terminal/local-share ~/.local/share/nvim && nvim'
+alias ncode='rm ~/.config/nvim && rm ~/.local/share/nvim && ln -s ~/neovim/code/config ~/.config/nvim && ln -s ~/neovim/code/local-share ~/.local/share/nvim && nvim'
+alias nerr='rm ~/.config/nvim && rm ~/.local/share/nvim && ln -s ~/neovim/error/config ~/.config/nvim && ln -s ~/neovim/error/local-share ~/.local/share/nvim'
+
+# set neovim to ....
+alias sterm='rm ~/.config/nvim && rm ~/.local/share/nvim && ln -s ~/neovim/terminal/config ~/.config/nvim && ln -s ~/neovim/terminal/local-share ~/.local/share/nvim'
+alias scode='rm ~/.config/nvim && rm ~/.local/share/nvim && ln -s ~/neovim/code/config ~/.config/nvim && ln -s ~/neovim/code/local-share ~/.local/share/nvim'
+
+# set default version
+## python
+alias python="python3"
+
+## pip
+alias pip="pip3"
+
+alias emacs='emacs -nw'

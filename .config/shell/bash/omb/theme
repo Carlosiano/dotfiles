@@ -1,0 +1,10 @@
+# Enable the subsequent settings only in interactive sessions
+case $- in
+  *i*) ;;
+    *) return;;
+esac
+
+export OSH=/home/mariocarlos/.oh-my-bash
+
+OSH_THEME="powerline"
+
