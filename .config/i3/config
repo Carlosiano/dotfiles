@@ -16,7 +16,7 @@
 
 # This is our mod Key. Currently it is set to the Windows Key.
 # You can uncomment the line below to set 'Alt' key as the mod key.
-#set $mod Mod1
+set $mod2 Mod1
 set $mod Mod4
 
 # Font for window titles. Will also be used by the bar.
@@ -25,7 +25,7 @@ font pango:Hack NF 15
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
-set $terminal exec alacritty
+set $terminal exec kitty
 
 # start a terminal. We use kitty.
 # default
@@ -47,7 +47,7 @@ bindsym $mod+p exec ~/.config/i3/bin/logout
 # This is the recommended mode. It searches for the programs as
 # defined in .desktop file, with their description, and corresponding
 # icons
-bindsym $mod+d exec --no-startup-id rofi -show drun -theme Monokai -icon-theme "Tela-circle" -show-icons
+bindsym $mod2+space exec --no-startup-id rofi -show drun -theme Monokai -icon-theme "Tela-circle" -show-icons
 
 # The other mode search for applications in /usr/bin or /usr/sbin.
 # This should only be used if a program lacks a .desktop file.
@@ -111,13 +111,13 @@ exec --no-startup-id nm-applet
 #bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 #Volume Control in ALG i3
-bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+ unmute
-bindsym XF86AudioLowerVolume exec amixer -q set Master 5%- unmute
-bindsym XF86AudioMute exec amixer -q set Master toggle
+bindsym XF86AudioRaiseVolume exec pulsemixer --change-volume +5
+bindsym XF86AudioLowerVolume exec pulsemixer --change-volume -5
+bindsym XF86AudioMute exec pulsemixer --toggle-mute
 
 ##Brightness Control in ALG i3
-bindsym XF86MonBrightnessUp exec sudo xbacklight -inc 10
-bindsym XF86MonBrightnessDown exec sudo xbacklight -dec 10
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
