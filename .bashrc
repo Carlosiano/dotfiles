@@ -5,4 +5,4 @@ source ~/.config/shell/path/.pathrc
 source ~/.config/shell/bash/config
 source ~/.config/shell/aliases/.aliases
 
-. "$HOME/.cargo/env"
+
