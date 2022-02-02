@@ -39,3 +39,7 @@ alias python="python3"
 alias pip="pip3"
 
 alias emacs='emacs -nw'
+
+alias vpns="nordvpn connect singapore"
+alias vpnl="nordvpn connect london"
+alias vpnd="nordvpn disconnect"

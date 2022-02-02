@@ -1,0 +1,8 @@
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
+export PATH=$PATH:"~/.emacs.d/bin"
+export PATH=$PATH:"~/.local/bin" 
+export PATH=$PATH:"~/.cargo/bin" 
+
+. "$HOME/.cargo/env"

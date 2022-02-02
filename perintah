@@ -1,0 +1,5 @@
+# change lockscreen walpapper
+betterlockscreen -u <path ke foto.jpg>
+
+# ubah screen resolution (default = 1366x768)
+xrandr --output eDP-1 --mode 1280x720
