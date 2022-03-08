@@ -9,7 +9,7 @@ bindsym $mod+Return exec $terminal
 
 bindsym $mod+q kill
 
-# rofi
+# rofi 
 bindsym $mod+p exec--no-startup-id ~/.config/rofi/bin/menu_powermenu 
 bindsym $alt+d exec ~/.config/polybar/shades/scripts/launcher.sh
 bindsym $alt+r exec ~/.config/polybar/shades/scripts/launcherrun.sh 
